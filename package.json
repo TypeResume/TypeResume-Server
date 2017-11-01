@@ -1,0 +1,14 @@
+{
+  "name": "TypeResume-Server",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "repository": "https://github.com/TypeResume/TypeResume-Server",
+  "author": "AngryPowman",
+  "license": "MIT",
+  "dependencies": {
+    "@types/express": "^4.0.39",
+    "@types/node": "^8.0.47",
+    "express": "^4.16.2",
+    "node": "^8.3.0"
+  }
+}
