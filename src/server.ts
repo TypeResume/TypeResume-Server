@@ -1,10 +1,12 @@
 import * as express from 'express';
+import { GithubOAuth } from './github-oauth';
 
 const LISTEN_PORT = 23333;
 let app = express();
 
-app.post('/', (req, res) => {
-    res.send('fuckoff resume');
+app.get('/resume/:username', async (req, res) => {
+    let response = await GithubOAuth.getUser(req.params.username);
+    res.send(response);
 });
 
 app.get('/', (req, res) => {
